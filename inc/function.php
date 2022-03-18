@@ -1,14 +1,14 @@
 <?php
 
 // DBConnection class
-require ("../../database/DBConnection.php");
+require ("./../database/DBConnection.php");
 
 // DataBase class
-require ("../../database/DataBase.php");
+require ("./../database/DataBase.php");
 
 
 $db = new DBConnection();
 
-$table = new DataBase($db);
+$table = new DataBase($database);
 
 ?>
