@@ -1,0 +1,202 @@
+/* admin css */
+body {
+	font-family: 'Open Sans', sans-serif; 
+	background: url('../img/bg4.png');
+}
+
+
+
+/* defult navbar section */
+header{
+  padding-top: 20px;
+  background-color: #aaa;
+}
+
+header nav {
+  padding: 0;
+}
+
+header nav ul li{
+  align-self: center;
+}
+
+header nav .nav-link{
+  color: #fff;
+}
+
+header nav .nav-link, .dropdown-item{
+  font-weight: 650;
+  font-size: 16px;
+}
+
+header ul li a {
+  position: relative;
+}
+
+/* defult effect navbar */
+header ul li a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #444 !important;
+  z-index: 1 !important;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0.4px;
+  left: 0;
+  background-color: #fff;
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition:  all 0.4s ease-out;
+  z-index: -1 !important;
+}
+
+header ul li a:hover:before {
+  transform: scale(1);
+}
+
+/* light effect navbar */
+.sticky_navigation {
+  background: #ffffff;
+  display: block;
+  padding: 0;
+}
+
+.sticky_navigation {
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .nav-link{
+  color: #222;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+/* light efect animation navbar section */
+.dropdown-item:hover, .sticky_navigation a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #fff !important;
+  z-index: 1 !important;
+}
+
+.dropdown-item::before,  .sticky_navigation .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0.4px;
+  left: 0;
+  background-color: #444;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition:  all 0.4s ease-out;
+  z-index: -1 !important;
+}
+
+.dropdown-item:hover:before,  .sticky_navigation a:hover:before {
+  transform: scale(1);
+}
+
+
+/* navbar x animation effect */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+
+
+/* galery link */
+.block{
+	position: relative;
+}
+
+.block-icon{
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  bottom: 0;
+  right: 0;
+}
+
+.block-v{
+	position: relative;
+}
+
+.icon-v{
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  top: 100%;
+  right: 0;
+}
+
+
+
+.table > thead > tr > th {
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+background-color:red;
+border:none;
+}
+  
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+	-moz-appearance:textfield; /* Firefox */
+}  
+
+
+
+/* BORDER */
+  .border-bottom-danger {
+	border-bottom: 0.25rem solid #e74a3b !important;
+  }
+  

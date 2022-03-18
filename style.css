@@ -1,0 +1,322 @@
+/* css */
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.clear{
+  clear: both;
+}
+
+.font-s-20{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.font-s-24{
+  font-size: 24px;
+  font-weight: 650;
+}
+
+.font-s-32{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+/* defult navbar section */
+header{
+  padding-top: 20px;
+}
+
+header nav {
+  padding: 0;
+}
+
+header nav ul li{
+  align-self: center;
+}
+
+header nav .nav-link{
+  color: #fff;
+
+}
+
+header nav .nav-link, .dropdown-item{
+  font-weight: 650;
+  font-size: 16px;
+}
+
+header ul li a {
+  position: relative;
+}
+
+/* defult effect navbar */
+header ul li a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #444 !important;
+  z-index: 1 !important;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0.4px;
+  left: 0;
+  background-color: #fff;
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition:  all 0.4s ease-out;
+  z-index: -1 !important;
+}
+
+header ul li a:hover:before {
+  transform: scale(1);
+}
+
+/* light effect navbar */
+.sticky_navigation {
+  background: #ffffff;
+  display: block;
+  padding: 0;
+}
+
+.sticky_navigation {
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .nav-link{
+  color: #222;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+/* light efect animation navbar section */
+.dropdown-item:hover, .sticky_navigation a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #fff !important;
+  z-index: 1 !important;
+}
+
+.dropdown-item::before,  .sticky_navigation .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0.4px;
+  left: 0;
+  background-color: #444;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition:  all 0.4s ease-out;
+  z-index: -1 !important;
+}
+
+.dropdown-item:hover:before,  .sticky_navigation a:hover:before {
+  transform: scale(1);
+}
+
+
+/* navbar x animation effect */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+
+/* banner area owl carousel */
+#banner-area{
+  width: 100%;
+  justify-content: center;
+}
+
+.image1{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* photos page */
+#banner-img{
+  width: 100%;
+  color:#fff;
+}
+
+.image2{
+  width: 100%;
+  height: 47vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  justify-content: space-between;
+  align-self: center;
+}
+
+/* Photos section Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #eee !important;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color: #ccc;
+}
+
+.tabcontent a img, #videos a img {
+  padding: 10px 2px !important;
+}
+
+/* text news */
+.text-red{
+  color:  #e74c3c;
+}
+
+.abzas{
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+
+/* calling section */
+.bg-red{
+  background-color:  #e74c3c !important;
+}
+
+#calling{
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0 10px -5px black;
+  -moz-box-shadow: 0 0 10px -5px black;
+  box-shadow: 0 0 10px -5px black;
+}
+
+#calling:hover{
+  background-color: #e74c3c;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#calling a{
+  color: #fff;
+}
+
+#calling:hover a{
+  background-color: #fff !important;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+/* admin page */
+.links a{
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.links a:hover{
+  text-decoration: none;
+}
+
+.insertModal{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.insertModal .card{
+  width: 350px;
+  box-shadow: 0 0 20px 0 #777;
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+  .navbar-brand img{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 2000px){
+  .lang{
+    min-width: 20px !important;
+  }
+}
