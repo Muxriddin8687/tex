@@ -31,14 +31,14 @@ if(!isset($_SESSION['name'])){
   <script src="../../assets/js/index.js" type="text/javascript"></script>
 
 
-    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../../../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./../../assets/css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="../../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://localhost/tex/admin/assets/css/style.css">
 
-    <script src="../../../assets/js/Jquery 3.3.1.JS"></script>
-    <script src="../../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/index.js" type="text/javascript"></script>
+    <script src="./../../assets/js/Jquery 3.3.1.JS"></script>
+    <script src="./../../assets/js/bootstrap.min.js"></script>
+    <script src="./../assets/js/index.js" type="text/javascript"></script>
