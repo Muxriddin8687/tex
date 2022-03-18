@@ -12,20 +12,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/logos/logo-b.png"/>
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
 
     <!-- Owl carousel css -->
-    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./../assets/css/owl.theme.default.min.css">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../assets/css/font-awesome.min.css">
 
     <!-- CSS style-->
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./../style.css">
 
 <?php
-    include "../../inc/function.php";
+    include "./../inc/function.php";
 ?>
 
 </head>
